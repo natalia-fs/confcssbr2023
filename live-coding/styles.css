@@ -1,0 +1,43 @@
+:root{
+  --green: #219169;
+  --yellow: #ffbd3c;
+  --blue: #214091;
+  --background: #101626;
+}
+
+body{
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+body:hover{
+  animation: logo 1s infinite alternate;
+}
+.container{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  transform: rotate(-135deg);
+}
+
+.color{
+  width: 100px;
+  height: 100px;
+}
+
+.color-1{
+  background: var(--yellow);
+}
+.color-2{
+  background: var(--green);
+}
+.color-3{
+  background: var(--blue);
+}
+
+@keyframes logo {
+  0% { transform: scale(0.75);}
+  100% { transform: scale(1);}
+}
